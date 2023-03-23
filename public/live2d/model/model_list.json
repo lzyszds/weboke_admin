@@ -1,0 +1,28 @@
+{
+  "models": [
+    "epsilon3/index.json",
+    "destroy/index.json",
+    [
+      "epsilon/heise/index.json",
+      "epsilon/heise1/index.json",
+      "epsilon/heise2/index.json",
+      "epsilon/heise3/index.json",
+      "epsilon/heise4/index.json",
+      "epsilon/heise5/index.json",
+      "epsilon/heise6/index.json"
+    ],
+    [
+      "epsilon1/heise/index.json",
+      "epsilon1/heise1/index.json",
+      "epsilon1/heise2/index.json",
+      "epsilon1/heise3/index.json",
+      "epsilon1/heise4/index.json",
+      "epsilon1/heise5/index.json",
+      "epsilon1/heise6/index.json",
+      "epsilon1/heise7/index.json",
+      "epsilon1/heise8/index.json"
+    ],
+    "epsilon2/index.json"
+  ],
+  "messages": []
+}

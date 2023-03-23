@@ -1,0 +1,132 @@
+{
+	"version": "Sample 1.0.0",
+	"model": "ryoufuku.moc",
+	"textures": [
+		"ryoufuku.1024/texture_00.png",
+		"ryoufuku.1024/texture_01.png"
+	],
+	"lip_sync": "false",
+	"layout": {
+		"center_x": 0.0,
+		"center_y": -0.05,
+		"width": 2.0
+	},
+	"hit_areas_custom": {
+		"head_x": [
+			-0.3,
+			1.12
+		],
+		"head_y": [
+			0.26,
+			0.56
+		],
+		"body_x": [
+			-0.41,
+			0.58
+		],
+		"body_y": [
+			0.46,
+			-1.12
+		]
+	},
+	"motions": {
+		"": [
+			{
+				"file": "ryoufuku.motions/akirame01.mtn"
+			}
+		],
+		"idle": [
+			{
+				"file": "ryoufuku.motions/akirame01.mtn"
+			},
+			{
+				"file": "ryoufuku.motions/angry01.mtn"
+			},
+			{
+				"file": "ryoufuku.motions/bye01.mtn"
+			},
+			{
+				"file": "ryoufuku.motions/cry01.mtn"
+			},
+			{
+				"file": "ryoufuku.motions/cry02.mtn"
+			},
+			{
+				"file": "ryoufuku.motions/happy01.mtn"
+			},
+			{
+				"file": "ryoufuku.motions/happy02.mtn"
+			},
+			{
+				"file": "ryoufuku.motions/idle01.mtn"
+			},
+			{
+				"file": "ryoufuku.motions/kime01.mtn"
+			},
+			{
+				"file": "ryoufuku.motions/nf_left01.mtn"
+			},
+			{
+				"file": "ryoufuku.motions/nf_right01.mtn"
+			},
+			{
+				"file": "ryoufuku.motions/nf01.mtn"
+			},
+			{
+				"file": "ryoufuku.motions/nf02.mtn"
+			},
+			{
+				"file": "ryoufuku.motions/nf03.mtn"
+			},
+			{
+				"file": "ryoufuku.motions/nf03.mtn"
+			},
+			{
+				"file": "ryoufuku.motions/nf04.mtn"
+			},
+			{
+				"file": "ryoufuku.motions/nf05.mtn"
+			},
+			{
+				"file": "ryoufuku.motions/nnf_left01.mtn"
+			},
+			{
+				"file": "ryoufuku.motions/nnf01.mtn"
+			},
+			{
+				"file": "ryoufuku.motions/nnf02.mtn"
+			},
+			{
+				"file": "ryoufuku.motions/nnf03.mtn"
+			},
+			{
+				"file": "ryoufuku.motions/nnf04.mtn"
+			},
+			{
+				"file": "ryoufuku.motions/nnf05.mtn"
+			},
+			{
+				"file": "ryoufuku.motions/sad01.mtn"
+			},
+			{
+				"file": "ryoufuku.motions/serious01.mtn"
+			},
+			{
+				"file": "ryoufuku.motions/smile01.mtn"
+			},
+			{
+				"file": "ryoufuku.motions/smile02.mtn"
+			},
+			{
+				"file": "ryoufuku.motions/surprised01.mtn"
+			}
+		]
+	},
+	"expressions": [
+		{
+			"name": "f01.exp.json",
+			"file": "expressions/f01.exp.json"
+		}
+	],
+	"physics": "physics.json"
+}
