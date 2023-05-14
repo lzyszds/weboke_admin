@@ -53,4 +53,3 @@ function aesDecrypt(data, key) {
 
 
 module.exports = { aesEncrypt, aesDecrypt }
-
