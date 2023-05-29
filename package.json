@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon ./src/server.js"
+    "dev": "nodemon ./src/server.js",
+    "buildWindow": "pkg ./src/server.js -t node18-win-x64 -o bin",
+    "buildLinux": "pkg ./src/server.js -t node18-linux-x64 -o app"
   },
   "author": "",
   "license": "ISC",

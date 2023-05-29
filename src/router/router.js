@@ -5,10 +5,6 @@ const { upload, uploadArticleImg } = require('../common/upload')
 const { aesEncrypt, aesDecrypt } = require('../common/crypto')
 const nowDate = Math.floor(Date.now() / 1000); //当前时间的时间戳
 
-//网易云音乐登陆
-// router.get('/musicLogin', async (req, res) => {
-
-// })
 
 //登陆验证`
 router.post('/login', (req, res) => {
@@ -16,7 +12,7 @@ router.post('/login', (req, res) => {
   UserName = username
   const sqlTxt = `
     select token from USERLIST
-    where username="${username}" and pwd = "${password}"
+    where username="${username}" and password = "${password}"
   `
   query(sqlTxt, req, res).then((data) => {
     if (data.length === 0) return res.send({ code: 204, message: '账号密码不存在' })
@@ -119,7 +115,7 @@ router.post('/deleteComment', async (req, res) => {
 //新增用户账号
 router.post('/addUserLzy', (req, res) => {
   const para = req.body
-  const sqlTxt = `insert into USERLIST(uname,username, pwd, token,power,createDate,lastLoginDate,headImg,isUse) 
+  const sqlTxt = `insert into USERLIST(uname,username, password, token,power,createDate,lastLoginDate,headImg,isUse) 
   values('${para.name}', '${para.username}', '${para.password}','
   ${para.token}','${para.power}', '${para.date}', '
   ${para.date}','${para.setHeadImg}','true')`
@@ -165,7 +161,7 @@ router.get('/userList', (req, res) => {
 //修改用户账号
 router.post('/updateUserLzy', (req, res) => {
   const para = req.body
-  const sqlTxt = `UPDATE USERLIST SET uname='${para.name}',username='${para.username}',pwd='${para.password}', headImg='${para.setHeadImg}' WHERE uid='${para.uid}' `
+  const sqlTxt = `UPDATE USERLIST SET uname='${para.name}',username='${para.username}',password='${para.password}', headImg='${para.setHeadImg}' WHERE uid='${para.uid}' `
   query(sqlTxt, req, res).then(item => {
     res.send({ code: 200, message: '修改成功' })
   }).catch(err => { res.send({ code: 204, message: '修改失败', err: err }) })
@@ -187,6 +183,7 @@ router.get('/getUserInfo', (req, res) => {
 
 //搜索用户
 router.get('/searchUser', (req, res) => {
+  console.log(123);
   // const pages = req.query.pages
   // const limit = req.query.limit //限制每次返回多少条数据
   const search = req.query.search

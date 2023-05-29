@@ -1,4 +1,5 @@
 const express = require('express')
+const path = require('path')
 const server = express()
 const adminRouter = require('./router/router')
 const bodyParser = require("body-parser");
@@ -19,10 +20,9 @@ server.use((req, res, next) => {
     req.body = JSON.parse(req.body.para)
   }
   if (!req.body && typeof req.body === 'string') return res.send({ code: 204, message: '发送的参数错误' })
-
-
   next()
 })
+
 server.use('/admin', adminRouter)
 
 server.use('/public', express.static('public'));//将文件设置成静态
